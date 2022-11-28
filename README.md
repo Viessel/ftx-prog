@@ -10,14 +10,24 @@ Install some prerequisites
 ```
 sudo apt-get install build-essential gcc make libftdi-dev
 ```
+or 
+
+```
+sudo dnf install gcc make libftdi-devel
+```
 
 then
 [download](https://github.com/richardeoin/ftx-prog/archive/master.zip),
 unzip, open a terminal in the unzipped directory and
 
 ```
-make
+make 
 ```
+If your are using a version of libftdi > 1.x
+
+```
+make USE_LIBFTDI1=1
+``` 
 
 Don't forget to plug in your FT-X device!
 
